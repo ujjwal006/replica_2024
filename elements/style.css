@@ -1,0 +1,262 @@
+html,
+  body {
+    scroll-behavior: smooth;
+    background-color: #faf7f7;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    width: 100vw;
+  }
+
+   
+
+
+#sidebar{
+    
+    width: 300px;
+    height: 800px;
+    background-color: rgb(223, 220, 220);
+    text-align: center;
+}
+.link {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 0;
+    color: var(--white);
+    font-size: 0.8rem;
+  }
+  
+#profile{
+    text-align: center;
+    color: black;
+}
+#username{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+#userid{
+    font-size:small ;
+    color: black;
+}
+#stats{
+    display: grid;
+    grid-template-columns: 25% 40% 50%;
+    grid-template-rows: 50% 50% 50%;
+    
+    padding-top: 20px;
+    color: black;
+    
+}
+#posts{
+    padding-left: 65px;
+    padding-right: 60px;
+}
+#following{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#stats2{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 2px;
+    padding-left: 0px;
+    margin: 0px;
+    
+}
+#posts2{
+    padding-left: 45px;
+    padding-right: 60px;
+}
+#following2{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#menu{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+   margin-top: 90px;
+   text-align: center;
+   display: grid;
+   flex-direction: column;
+   grid-template-rows: 60px 60px 60px;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image-container {
+    width: 300px; 
+    height: 200px; 
+    overflow: hidden;
+    margin-bottom: 20px;
+    position:relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  .photos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .photo {
+    width: 50px; 
+    height: 50px;
+    object-fit: cover;
+  }
+
+#home{
+    padding:10px;
+    
+}
+#search{
+    padding:10px;
+}
+#reel{
+    padding:10px;
+}
+#shopping{
+    padding:10px;
+}
+#account{
+    padding:10px;
+}
+#navbar{
+    display: inline;
+}
+.main-container,
+    .stories-container {
+      width: 90vw !important;
+    }
+  
+  
+  a {
+    color: var(--black);
+    text-decoration: none;
+  }
+  
+  .main-container {
+    padding: 1rem;
+    display: block;
+    width: 45vw;
+    margin-left: auto;
+    height: auto;
+    overflow-y: auto;
+  }
+  
+  .suggested-for-you {
+    padding: 1rem;
+    width: 30%;
+  }
+  
+  .stories-container {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 5px 0px;
+    gap: 1rem;
+    margin: 10px;
+    margin-left: 0;
+  }
+  
+  .story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .story p {
+    margin: 0.5rem 0rem;
+    font-size: 0.65rem;
+    text-align: center;
+  }
+  
+  .gradient-border {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px;
+    padding-top: 0;
+  }
+  
+  .gradient-border img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--black);
+  }
+  #storyt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    padding-left: 30px;
+    margin-left: 30px;
+  }
+
+  .link{
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 50px;
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+  }
+  .ani {
+    background-color:rgb(223, 220, 220);
+    color: #111111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .ani:hover {
+    background-color: #cdd2d6;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ani:active {
+    transform: scale(0.95);
+  }
+  .dp {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .dp:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+/* for post photos */
